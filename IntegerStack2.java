@@ -51,7 +51,7 @@ public class IntegerStack2 {
     public void display() {
         if (!isEmpty()) {
             System.out.println("Stack contents:");
-            for (int i = 0; i < top; i++) {
+            for (int i = 0; i <= top; i++) {
                 System.out.println(StackArray[i] + "");
             }
             System.out.println();
