@@ -39,6 +39,7 @@ public class Matrix1 {
                 matrix[i][j] = scanner.nextInt();
             }
         }
+        scanner.close();
         return matrix;
     }
 
