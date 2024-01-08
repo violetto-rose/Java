@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Matrix1 {
     public static void main(String[] args) {
-
         if (args.length != 1) {
             System.out.println("Please provide the order 'N' as a corresponding command-line argument");
             return;
@@ -15,8 +14,10 @@ public class Matrix1 {
             return;
         }
 
-        int[][] matrixA = readMatrix("Matrix A", N);
-        int[][] matrixB = readMatrix("Matrix B", N);
+        Scanner scanner = new Scanner(System.in);
+
+        int[][] matrixA = readMatrix(scanner, "Matrix A", N);
+        int[][] matrixB = readMatrix(scanner, "Matrix B", N);
 
         System.out.println("Matrix A:");
         printMatrix(matrixA);
@@ -27,10 +28,11 @@ public class Matrix1 {
 
         System.out.println("Sum of the two matrices:");
         printMatrix(resultMatrix);
+
+        scanner.close();
     }
 
-    public static int[][] readMatrix(String matrixName, int N) {
-        Scanner scanner =  new Scanner(System.in);
+    public static int[][] readMatrix(Scanner scanner, String matrixName, int N) {
         int[][] matrix = new int[N][N];
         System.out.println("Enter the values for " + matrixName + ":");
         for (int i = 0; i < N; i++) {
@@ -39,7 +41,6 @@ public class Matrix1 {
                 matrix[i][j] = scanner.nextInt();
             }
         }
-        scanner.close();
         return matrix;
     }
 
