@@ -79,7 +79,7 @@ public class IntegerStack2 {
         stack.display();
         stack.pop();
         stack.display();
-        System.out.println("Top element" + stack.peek());
+        System.out.println("Top element: " + stack.peek());
         scanner.close();
     }
 }
