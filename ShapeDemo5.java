@@ -1,3 +1,5 @@
+/*5. Develop a JAVA program to create a class named shape. Create three sub classes namely: circle, triangle and square, each class has two member functions named draw () and erase (). Demonstrate polymorphism concepts by developing suitable methods, defining member data and main program.*/
+
 class MyShape {
     // Member function to draw a shape
     public void draw() {

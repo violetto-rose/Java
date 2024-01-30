@@ -1,3 +1,5 @@
+/*2. Develop a stack class to hold a maximum of 10 integers with suitable methods. Develop a JAVA main method to illustrate Stack operations.*/
+
 import java.util.Scanner;
 
 public class IntegerStack2 {
