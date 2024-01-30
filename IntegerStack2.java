@@ -24,7 +24,7 @@ public class IntegerStack2 {
     public void push(int value) {
         if (!isFull()) {
             StackArray[++top] = value;
-            System.out.println("Pushed " + value + " on to stack");
+            System.out.println("Pushed " + value + " onto stack");
         } else {
             System.out.println("Stack is full, cannot push " + value);
         }
