@@ -67,7 +67,7 @@ public class Resize7 {
         rectangle.resizeHeight(newHeight);
 
         // Display the updated dimensions
-        System.out.println("\nUpdated Dimensions : ");
+        System.out.println("Updated Dimensions : ");
         rectangle.displayDimensions();
         sc.close();
     }
