@@ -1,10 +1,24 @@
+class IntHolder {
+    int value;
+
+    IntHolder(int value) {
+        this.value = value;
+    }
+}
+
 public class Swap {
-    public static void main(String args[]) {
-        int a = 10, b = 5, temp;
-        System.out.printf("Value of a and b before swapping is a & b is %d and %d\n", a, b);
-        temp = a;
-        a = b;
-        b = temp;
-        System.out.printf("Value of a and b after swapping is a & b is %d and %d", a, b);
+    public static void tempSwap(IntHolder a, IntHolder b) {
+        int temp = a.value;
+        a.value = b.value;
+        b.value = temp;
+    }
+
+    public static void main(String[] args) {
+        IntHolder a = new IntHolder(10);
+        IntHolder b = new IntHolder(20);
+
+        System.out.println("Before swapping: a = " + a.value + ", b = " + b.value);
+        tempSwap(a, b);
+        System.out.println("After swapping using wrapper: a = " + a.value + ", b = " + b.value);
     }
 }

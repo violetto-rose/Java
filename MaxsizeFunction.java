@@ -1,4 +1,4 @@
-class MaxsizeFunction {
+public class MaxsizeFunction {
     public static int maxsize(int n, int k, String s) {
         int leadingZeros = 0;
         int trailingZeros = 0;
