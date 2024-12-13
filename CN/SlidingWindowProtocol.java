@@ -1,4 +1,4 @@
-//Develop a program to implement a sliding window protocol in the data link layer.
+// Develop a program to implement a sliding window protocol in the data link layer.
 
 import java.util.LinkedList;
 import java.util.Queue;

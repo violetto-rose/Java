@@ -1,3 +1,5 @@
+// Develop a program on a datagram socket for client/server to display the messages on client side, typed at the server side.
+
 package Datagram;
 
 import java.net.*;

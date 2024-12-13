@@ -1,4 +1,4 @@
-//Develop a program for error detecting code using CRC-CCIT(16-bits)
+// Develop a program for error detecting code using CRC-CCIT(16-bits)
 
 public class CRC16 {
     private static final int POLYNOMIAL = 0xA001; // CRC-CCITT polynomial
