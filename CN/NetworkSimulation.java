@@ -1,4 +1,5 @@
 // Implement transmission of ping message/trace route over a network topology consisting of 6 nodes and find the number of packets dropped due to congestion.
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
