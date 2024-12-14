@@ -39,8 +39,7 @@ public class EthernetLAN {
             nodes[i] = new Node(queueSize);
         }
         for (int i = 0; i < packetsToSend; i++) {
-            int sender = rand.nextInt(numNodes);
-            nodes[sender].sendPacket(i);
+            nodes[rand.nextInt(numNodes)].sendPacket(i);
         }
         for (Node node : nodes) {
             for (int j = 0; j < 5; j++) {

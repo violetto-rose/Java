@@ -36,8 +36,7 @@ public class NetworkSimulation {
             nodes[i] = new node(queueSize);
         // Simulate sending pings
         for (int i = 0; i < pingsToSend; i++) {
-            int sender = rand.nextInt(numnodes); // Random sender
-            nodes[sender].sendPing(i); // Send a ping
+            nodes[rand.nextInt(numnodes)].sendPing(i);; // Random sender, Send a ping
         }
         // Simulate processing pings (ensuring that not all are processed)
         for (node node : nodes) {
